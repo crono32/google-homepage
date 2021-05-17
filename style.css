@@ -132,12 +132,13 @@ table {
 html,
 body {
   height: 100%;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 main {
@@ -168,7 +169,7 @@ input:focus {
 
 input:hover,
 button:hover {
-  box-shadow: 0px 0px 2px gray;
+  box-shadow: 0px 1px 3px rgba(128, 128, 128, 0.555);
 }
 
 button {
@@ -178,4 +179,73 @@ button {
   border-radius: 5px;
   margin: 5px;
   cursor: pointer;
+}
+
+#header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  font-size: 13px;
+}
+
+li,
+ul {
+  display: inline;
+}
+
+#sign-in {
+  background-color: blue;
+  color: white;
+  padding: 10px 25px;
+  font-size: 1.2em;
+}
+
+#sign-in:hover {
+  background-color: rgb(54, 54, 250);
+}
+
+#header-left {
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+li {
+  padding: 5px;
+}
+
+a {
+  color: rgb(26, 26, 26);
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#apps {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  background-image: url("apps-icon.png");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center center;
+  margin: 0 10px;
+  opacity: 0.7;
+}
+
+#apps:hover {
+  border-radius: 50%;
+  background-image: url("apps-icon.png");
+  background-repeat: no-repeat;
+  background-color: rgba(216, 216, 216, 0.658);
+}
+
+#header-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
