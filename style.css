@@ -301,9 +301,7 @@ footer p {
 
   #footer1 {
     position: absolute;
-    margin-left: auto;
-    width: 100%;
-    text-align: center;
+    left: calc(50% - 110px);
   }
 }
 
