@@ -196,14 +196,14 @@ ul {
 }
 
 #sign-in {
-  background-color: blue;
+  background-color: #1a73e8;
   color: white;
   padding: 10px 25px;
   font-size: 1.2em;
 }
 
 #sign-in:hover {
-  background-color: rgb(54, 54, 250);
+  background-color: #2e80eb;
 }
 
 #header-left {
