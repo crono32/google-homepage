@@ -173,7 +173,7 @@ button:hover {
 }
 
 button {
-  background-color: rgba(241, 241, 241, 0.411);
+  background-color: #f8f9fa;
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
@@ -187,6 +187,7 @@ button {
   align-items: center;
   padding: 5px;
   font-size: 13px;
+  font-weight: bold;
 }
 
 li,
@@ -210,6 +211,10 @@ ul {
   font-size: 14px;
 }
 
+footer {
+  font-size: 14px;
+}
+
 li {
   padding: 5px;
 }
@@ -217,7 +222,6 @@ li {
 a {
   color: rgb(26, 26, 26);
   text-decoration: none;
-  font-family: sans-serif;
 }
 
 a:hover {
@@ -248,4 +252,58 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  height: 100px;
+  padding: 0 20px;
+}
+
+#footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border-top: 1px solid #dadce0;
+  flex: 1;
+}
+
+#country {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5px;
+}
+
+#footer-left,
+#footer-right,
+#footer-middle {
+  flex: 1;
+}
+
+#footer-right {
+  text-align: right;
+}
+
+#footer-middle {
+  text-align: center;
+}
+
+#leaf {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("leaf.png");
+  padding-right: 20px;
+  background-position: center 2px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+
+footer li {
+  padding-right: 20px;
 }
