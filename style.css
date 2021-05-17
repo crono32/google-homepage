@@ -254,45 +254,6 @@ a:hover {
   align-items: center;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  background-color: #f2f2f2;
-  height: 100px;
-  padding: 0 20px;
-}
-
-#footer-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 50px;
-  border-top: 1px solid #dadce0;
-  flex: 1;
-}
-
-#country {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 5px;
-}
-
-#footer-left,
-#footer-right,
-#footer-middle {
-  flex: 1;
-}
-
-#footer-right {
-  text-align: right;
-}
-
-#footer-middle {
-  text-align: center;
-}
-
 #leaf {
   display: inline-block;
   width: 20px;
@@ -304,6 +265,117 @@ footer {
   background-size: 30px;
 }
 
-footer li {
-  padding-right: 20px;
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  padding: 0 25px;
+}
+
+#footer-links {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #dadce0;
+  flex: 1;
+}
+
+footer p {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5px;
+}
+
+#footer2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media (min-width: 1201px) {
+  footer {
+    height: 100px;
+  }
+
+  #footer1 {
+    position: absolute;
+    margin-left: auto;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  footer {
+    height: 140px;
+  }
+  #footer-links {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  footer p {
+    flex: 1;
+  }
+  #footer1 {
+    display: flex;
+    align-items: center;
+  }
+  #footer2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  #footer2-1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 330px;
+  }
+  #footer2-2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    width: auto;
+  }
+  #footer2 a {
+    padding: 0px 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    height: 200px;
+  }
+  footer p {
+    flex: 1;
+  }
+  #footer-links {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+  }
+  #footer1 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  #footer2 {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #footer2-1,
+  #footer2-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 400px;
+    justify-content: center;
+  }
 }
